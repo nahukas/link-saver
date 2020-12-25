@@ -2,6 +2,11 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
 
+# Ignore Mac DS_Store files
+.DS_Store
+*.DS_Store
+**/.DS_Store
+
 node_modules/
 
 # local env files
