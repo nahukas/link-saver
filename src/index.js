@@ -9,7 +9,7 @@ const passport = require('passport');
 
 const { database } = require('./keys');
 
-// Initalize
+// Initialize
 const app = express();
 require('./lib/passport');
 
@@ -48,6 +48,7 @@ app.use(passport.session());
 app.use((req, res, next) => {
   app.locals.success = req.flash('success');
   app.locals.message = req.flash('message');
+  app.locals.user = req.user;
   next();
 });
 
